@@ -1,0 +1,72 @@
+/* Estilos para las pestañas */
+.nav-tabs {
+    margin:0px;
+    display:-webkit-box;
+
+    align-items: center;
+
+    background-color: #2C2C2C;
+    color: white;
+  }
+  
+  .nav-tab {
+    background-color: #4b4b4b;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-tab.active {
+    background-color: #62cf4c;
+    color: black;
+  }
+  
+  .tab-line {
+    height: 2px;
+    background-color: #62cf4c;
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  /* Estilos para el contenido de las pestañas */
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  /* Otros estilos necesarios */
+  
+  /* Estilos para las pestañas en modo claro */
+.light-mode .nav-tabs {
+    background-color: #e8ffeb;
+    color: #333;
+}
+
+.light-mode .nav-tab {
+    background-color: #bee6b6;
+    color: #333;
+}
+
+.light-mode .nav-tab.active {
+    background-color: #62cf4c;
+    color: black;
+}
+
+.light-mode .tab-line {
+    background-color: #62cf4c;
+}
+
+/* Estilos para el contenido de las pestañas en modo claro */
+.light-mode .tab-content.active {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.content{
+    display:-webkit-box
+}

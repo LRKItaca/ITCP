@@ -1,0 +1,46 @@
+{
+  "name": "itpc",
+  "version": "0.0.1",
+  "description": "Proyecto para aprender EL",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.lrk.ITPC",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LRKItaca/ITCP.git"
+  },
+  "author": "Lucas Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LRKItaca/ITCP/issues"
+  },
+  "homepage": "https://github.com/LRKItaca/ITCP#readme",
+  "devDependencies": {
+    "electron": "^25.5.0",
+    "electron-builder": "^24.6.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "es6": "^0.0.7",
+    "fs": "^0.0.1-security",
+    "jquery": "^3.7.0",
+    "mssql": "^9.1.3"
+  }
+}

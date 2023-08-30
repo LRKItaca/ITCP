@@ -1,0 +1,1 @@
+Es OBLIGATORIO usar "npm install" para poder acceder al desarrollo de la aplicación, ya que si no, no tendrá los modulos para poder usar.

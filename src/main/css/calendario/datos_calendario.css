@@ -1,0 +1,127 @@
+
+  
+
+  #cal-container {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  #top-row {
+    display: flex;
+  }
+  
+  #cal-id {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #4caf50;
+  }
+  
+  #desc {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #2a2a2a;
+    color: #d4d4d4;
+  }
+  
+  .light-mode #desc {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  #days {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .day {
+    display: flex;
+    margin-bottom:20px;
+    margin-left:60px;
+  }
+  
+ p{
+    
+    padding: 5px;
+
+    color: #d4d4d4;
+    border: none;
+    font-size:20px;
+    margin: 7px;
+ }
+ .light-mode p{
+    color:black;
+ }
+
+  input[type="text"] {
+
+    padding: 5px;
+
+    color: #d4d4d4;
+    border: none;
+    font-size:20px;
+  }
+  
+  select {
+    width: 50%;
+    left:400px;
+    position:absolute;
+    background-color: #2a2a2a;
+    color: #d4d4d4;
+    padding: 5px;
+  }
+  
+  .light-mode select{
+    background-color: #f0f0f0;
+  }
+
+  hr {
+    border-color: #4caf50;
+  }
+  
+  .light-mode hr {
+    border-color: #8bc34a;
+  }
+
+  #cal-id{
+    font-size:30px;
+    color:white;
+  }
+
+  .light-mode #cal-id{
+    background-color: #dbdbdb;
+    color:black;
+  }
+  .light-mode #c{
+    color:black;
+    background-color: #e2ffc1;
+  }
+  .light-mode select{
+    color:black;
+  }
+  
+  #desc{
+    font-size:20px;
+    flex-grow: 0;
+    width:74%;
+    margin-left:10px;
+    background-color: #3d5846;
+  }
+  .light-mode #desc{
+    background-color: #e2ffc1;
+  }
+
+  #save{
+    border-radius:5px;
+    background-color:#005f03;
+    margin-left:10px;
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+  }
+  
+  .light-mode #cal-container{
+    color:black;
+    background-color: #f5fff5;
+  }
