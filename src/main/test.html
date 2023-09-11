@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ITPC</title>
+  <link id = "principalsheet" rel="stylesheet" type="text/css" href="src/main/css/styles.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Quitar barras de desplazamiento */
+    }
+  </style>
+</head>
+<body class="modo-oscuro"> <!-- Agregar la clase modo-oscuro aquí si está activado -->
+  <header class="header">
+    <h1>ITPC</h1>
+    <div class="header-buttons">
+      <button class="header-button" id="mn">-</button>
+      <button class="header-button" id="crr">X</button>
+    </div>
+  </header>
+
+  <script type="module" src="src/main/js/test.js"></script>
+  <div class="main-content">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#" class="nav-link">Usuarios</a></li>
+        <li><a href="#" class="nav-link">Terminales</a></li>
+        <li><a href="#" class="nav-link">Horario</a></li>
+        <li><a href="#" class="nav-link">Calendario</a></li>
+        <div class="settings">
+          <li><a href="#" class="nav-link">Ajustes</a></li>
+        </div>
+      </ul>
+    </nav>
+    <div id = "contenido" class="content">
+      <p class="empty-message">Para empezar, seleccione una opción de la barra de navegación</p>
+    </div>
+  </div>
+
+  
+<div id="loading-popup">
+  <div id="loading-content">
+    <div class="loader"></div>
+    <p>Cargando...</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src\main\css\usuarios\datos.css">
+</head>
+<body>
+  <div class="mc">
+    <div class="uf">
+      <div class="ir">
+        <div class="ce large" id="zID">
+          <input type="number" readonly="true" id="idt" placeholder="ID">
+        </div>
+        <div class="ce dropdown">
+          <select id="emp">
+
+          </select>
+        </div>
+      </div>
+      <div class="ir">
+        <div class="ce">
+          <input type="text" id="nom" placeholder="Nombre">
+        </div>
+        <div class="ce">
+          <input type="text" id="ap1" placeholder="Apellido 1">
+        </div>
+        <div class="ce">
+          <input type="text" id="ap2" placeholder="Apellido 2">
+        </div>
+      </div>
+      <div class="ir dates" id="fch">
+        <div class="ce">
+          <p id = "pia">Inicio Ausencia</p>
+          <input type="text" id="ia"placeholder="dd-mm-yyyy" value="">
+        </div>
+        <div class="ce">
+          <p id = "pfa">Final Ausencia</p>
+          <input type="text" id="fa" placeholder="dd-mm-yyyy" value="">
+        </div>
+        <div class="ce">
+          <p id = "pfb">Fecha Baja</p>
+          <input type="text" id="fb" placeholder="dd-mm-yyyy"value="">
+        </div>
+        <div class="ci">
+          <label for="da" id="lblda">Denegar Acceso</label>
+          <input type="checkbox" id="da">
+        </div>
+        <div class="ci">
+          <label for="apb" id="lblap">Aplicar APB</label>
+          <input type="checkbox" id="apb">
+        </div>
+      </div>
+      <div class="ir">
+        <div class="ce small">
+          <label id="lblpin">PIN</label>
+          <input type="text" id="pin" placeholder="PIN">
+        </div>
+        <div class="ce medium">
+          <label id="lbltarj">Tarjeta</label>
+          <input type="text" id="tarj" placeholder="Tarjeta">
+        </div>
+        <div class="ci" >
+          <label for="tbt" id="lbltbt">Tirar brazo Torno</label>
+          <input type="checkbox" id="tbt">
+        </div>
+        <div class="ci">
+          <label for="aa" id="act">Activar Alarma</label>
+          <input type="checkbox" id="aa">
+        </div>
+      </div>
+
+
+      <!-- ICONOS: https://github.com/danklammer/bytesize-icons-->
+      <div class="bg">
+        <button id="cnc">
+          <svg id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M2 30 L30 2 M30 30 L2 2" />
+        </svg>
+
+        </button>
+        <button id="ini">
+          <svg id="i-start" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M8 2 L8 16 22 2 22 30 8 16 8 30" />
+        </svg>
+        </button>
+        <button id="ant">
+          <svg id="i-caret-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M22 30 L6 16 22 2 Z" />
+        </svg>
+        </button>
+        <button id="sig">
+          <svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M10 2 L10 30 24 16 Z" />
+        </svg>
+        </button>
+        <button id="ult">
+          <svg id="i-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M24 2 L24 16 10 2 10 30 24 16 24 30" />
+        </svg>
+        </button>
+        <button id="guardar">
+          <svg id="i-checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M2 20 L12 28 30 4" />
+        </svg>
+        </button>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

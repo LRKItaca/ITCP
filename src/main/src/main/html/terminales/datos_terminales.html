@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/main/css/terminales/datos_terminales.css">
+  <title>Interfaz de Configuración</title>
+</head>
+<body>
+    <div class="container" id="a">
+        <div class="top-row" id="b">
+          <div class="search-container" id="c">
+            <!--<button class="search-button" id="d">🔍</button>-->
+            <input type="text" id="e" placeholder="ID">
+          </div>
+          <button class="save-button" id="f">Guardar</button>
+        </div>
+        <div class="section" id="g">
+          <h3 class="section-title" id="h">Funcionamiento</h3>
+          <div class="checkbox-group" id="i">
+            <p id="j1">Presencia laboral</p>
+            <p id="k1">Acceso de Entrada/Salida</p>
+            <p id="l1">Aplicar AntiPassBack</p>
+            <p id="m1">Modo Fichaje Masivo</p>
+            <p id="n1">Registrar Errores</p>
+            <p id="o1">Lector Auxiliar</p>
+            <p id="p1">Aplicar horarios al Auxiliar</p>
+            <p id="q1">Auxiliar Abre Siempre</p>            
+          </div>
+          <div class="dropdown-group" id="r">
+            <label for="s" id="s1">Tipo Lector</label><select id="s"></select>
+            <label for="t" id="t1">Modo (On/Off)</label><select id="t"></select>
+            <label for="u" id="u1">Comunicación</label><select id="u"></select>
+          </div>
+          <div class="textbox-group" id="v">
+            <label for="w" id="w1">Dirección IP</label><input type="text" id="w">
+            <label for="x" id="x1">Identificación</label><select type="text" id="x"></select>
+          </div>
+        </div>
+        <div class="section" id="y">
+          <div class="sub-section" id="z">
+            <h3 class="section-title" id="aa">Tiempos de Cortesía</h3>
+            <div class="textbox-group" id="ab">
+              <label for="ac" id="ac1">Cortesía de entrada</label><input type="number" id="ac">
+              <label for="ad" id="ad1">Cortesía de Salida</label><input type="number" id="ad">
+            </div>
+          </div>
+          <div class="sub-section" id="ae">
+            <h3 class="section-title" id="af">Configuración de Tiempos</h3>
+            <div class="textbox-group" id="ag">
+              <label for="ah" id="ah1">Mensaje en display</label><input type="number" id="ah">
+              
+            </div>
+            <div class="textbox-group"><label for="ai" id="ai1">Respuesta de usuario</label><input type="number" id="ai"></div>
+            <div class="textbox-group"><label for="aj" id="aj1">Activación de Cerradura</label><input type="number" id="aj"></div>
+          </div>
+        </div>
+        <div class="section" id="ak">
+          <h3 class="section-title" id="al">Alarma</h3>
+          <div class="checkbox-group" id="am">
+            <label for="an" id="an1">Act/Desact. con tarjeta</label><input type="checkbox" id="an">
+            <label for="ao" id="ao1">Desactivación Automática</label><input type="checkbox" id="ao">
+          </div>
+          <div id="daq"><label for="aq" id="aq1">Tmp. Alarma Pta. Abierta</label><input type="text" id="aq"></div>
+          <div id="dar"><label for="ar" id="ar1">Tmp. Relé Alarma</label><input type="text" id="ar"></div>
+          <div id="das"><label for="as" id="as1">Pin Desact. Manual</label><input type="text" id="as"></div>
+        </div>
+        <div class="section" id="at">
+          <h3 class="section-title" id="au">Configuración de Nodo</h3>
+          <div class="checkbox-group" id="av">
+            <label for="aw" id="aw1">Es Auxiliar</label><input type="checkbox" id="aw">
+            <label for="ax" id="ax1">Motorizado</label><input type="checkbox" id="ax">
+            <label for="ay" id="ay1">Control de Aforo</label><input type="checkbox" id="ay">
+          </div>
+          <div class="textbox-group" id="az1">
+            <label for="bb" id="bb1">Nº nodo</label><input type="text" id="bb" style="margin-left:120px">
+          </div>
+          <div class="textbox-group" id="az2">
+            <label for="bc" id="bc1">Nº nodo display/relé</label><input type="text" id="bc" style="margin-left:34px;">
+          </div>
+          <div class="textbox-group" id="az3">
+            <label for="bd" id="bd1">Nº de Relé cerradura</label><input type="text" id="bd" style="margin-left:27px;">
+          </div>
+          <div class="textbox-group" id="az4">
+            <label for="be" id="be1">Activación de cerradura</label><input type="text" id="be" style="margin-left:9px">
+          </div>
+          <div class="textbox-group" id="az5">
+            <label for="bf" id="bf1">Nº de Relé Zumbador</label><input type="text" id="bf" style="margin-left:23px">
+          </div>
+          <div class="textbox-group" id="az6">
+            <label for="bg" id="bg1">Activación de Zumbador</label><input type="text" id="bg" style="margin-left:4px;">
+          </div>
+          
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+.mc, .mc * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+.mc {
+  width: 1001px;
+  height: 598px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.light-mode .mc{
+  background-color: #92ff97;
+}
+#zID{
+  display: contents;
+}
+#pia,#pfa,#pfb {
+  margin-left:-25px;
+}
+#ia,#fa,#fb {
+  text-align: center;
+  width:150px;
+}
+#emp{
+  text-align: center;
+  font-size:48px;
+  color:#8bc34a;
+  
+}
+p{
+  color:white;
+  text-align: center;
+}
+#pin{
+  width:100px;
+  color:rgba(0,0,0,0)
+}
+#pin:hover{
+  opacity:1;
+  color:rgba(0,0,0,1)
+}
+#tarj{
+  margin-left:-80px;
+  width:300px;
+}
+#lbltbt{
+  position: relative;
+  left: 20px;
+  border: 1px solid black;
+  border-radius:12px;
+  padding:10px;
+  background-color: #3a613a;
+  color:white;
+  cursor:pointer;
+  transition: transform 0.1s ease;
+}
+#tbt{
+  margin-left:40px;
+  border: 1px solid black;
+  border-radius:12px;
+  padding:10px;
+
+  cursor:pointer;
+  transition: transform 0.1s ease;
+}
+#act{
+  margin-left:-15px;
+  border: 1px solid black;
+  border-radius:12px;
+  padding:10px;
+  background-color: #3a613a;
+  color:white;
+  cursor:pointer;
+  transition: transform 0.1s ease;
+}
+
+.light-mode #act,.light-mode #lbltbt, .light-mode #tbt,.light-mode #lblda,.light-mode #lblap{
+  background-color: #ceffcf;
+  color:black;
+}
+#idt{
+  font-size:36px;
+}
+
+#guardar{
+  background-color: #86b5e0;
+}
+
+#cnc{
+  background-color: rgb(202, 65, 65);
+}
+.uf {
+  width: 95%;
+  height: 88%;
+  margin-top:10px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ir {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ce.large input {
+  width: 120px;
+  height: 100px;
+  text-align: center;
+}
+
+select {
+  flex: 2;
+  padding: 10px;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.ce {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.ce input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  font-size: 16px;
+  
+}
+
+#lblpin{
+  color:white;
+}
+#lbltarj{
+  margin-left:-80px;
+  color:white;
+}
+
+.light-mode #lblpin, .light-mode #lbltarj{
+  color:black;
+}
+
+.ce.medium input {
+  width: 150px;
+}
+
+.ce.small input {
+  width: 100px;
+}
+
+.dates {
+  border-top: 1px solid #ffffff;
+  padding-top: 10px;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #ffffff;
+}
+
+.ci {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+#lblda{
+  border: 1px solid black;
+  border-radius:12px;
+  padding:10px;
+  background-color: #3a613a;
+  color:white;
+  cursor:pointer;
+  transition: transform 0.1s ease;
+}
+
+#lblap{
+  border: 1px solid black;
+  border-radius:12px;
+  padding:10px;
+  background-color: #3a613a;
+  color:white;
+  cursor:pointer;
+  transition: transform 0.1s ease;
+}
+
+#lblap:active, #lblda:active, #lbltbt:active, #act:active{
+  transform:scale(0.8)
+}
+.ci input {
+  margin-right:25px;
+  margin-left: 25px;
+}
+
+.bg {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.light-mode .bg{
+
+  color: #000000;
+}
+
+.bg button {
+  padding: 10px;
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:120px;
+  transition: transform 0.1s ease;
+}
+.bg button:active{
+  transform:scale(0.8)
+}
+.light-mode .uf {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.light-mode .ce input, .light-mode select {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-mode .bg button {
+  background-color: #8bc34a;
+}
+
+.light-mode #emp {
+  color: green;
+}
+
+.light-mode label {
+  color:rgb(155, 62, 62);
+}
+
+
+.light-mode #fch{
+  border-color: black;
+}
+
+.light-mode p {
+  color:black;
+}
