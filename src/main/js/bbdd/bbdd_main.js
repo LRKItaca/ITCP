@@ -4,7 +4,7 @@ const $ = require('jquery');
 const bootstrap = require('bootstrap');
 
 // mssql
-import {cnxDB, queryEmpresas, queryUsuarios, borrarUsuario, queryTerminales, queryHorarios} from './sql server/mssql.js'
+import {cnxDB, queryEmpresas, queryUsuarios, borrarUsuario, queryTerminales, queryHorarios,guardarUsuario} from './sql server/mssql.js'
 import {terminalesNavegacion} from '../test.js'
 // MYSQL
 // import {cnxDB} from ./sql server/mysql.js
@@ -604,6 +604,9 @@ function borrarUSRSeleccionado(){
 
 }
 function guardarQuery(r){
-    console.log('guardado!!!!')
+
+    guardarUsuario(r)
+
+
     busquedaUsuarios(r)
 }

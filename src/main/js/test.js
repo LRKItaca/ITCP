@@ -388,21 +388,21 @@ export function usuariosNavegacion(){ //USUARIOS
       
     })
   })
-  $('#usr-pr').off('click').on('click',function(){
+  // $('#usr-pr').off('click').on('click',function(){
 
-    dbit('Cargando PERMISOS en USUARIOS') 
+  //   dbit('Cargando PERMISOS en USUARIOS') 
 
-    cargando()
-    tb.empty()
-    tb.load('src/main/html/usuarios/permisos.html', function(){
+  //   cargando()
+  //   tb.empty()
+  //   tb.load('src/main/html/usuarios/permisos.html', function(){
 
-      generarPermisosLista()
+  //     generarPermisosLista()
 
-         setTimeout(function() {
-       listo();  
-     }, 100); })
+  //        setTimeout(function() {
+  //      listo();  
+  //    }, 100); })
       
-  })
+  // })
 
 }
 

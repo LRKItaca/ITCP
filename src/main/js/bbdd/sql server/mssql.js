@@ -60,6 +60,7 @@ export function cnxDB() {
 }
 
 
+import { Alert } from 'bootstrap';
 import { cargando,listo,dbit } from '../../test.js';
 
 export async function queryEmpresas(){
@@ -81,6 +82,62 @@ export async function queryEmpresas(){
     }
 
     listo()
+
+
+}
+
+export async function guardarUsuario(dt){
+
+  try {
+    const pool = await sql.connect(config);
+    var sql = `
+    MERGE INTO [AccessCtrl14_ITACA].[dbo].[Usuario] AS target
+    USING (
+        SELECT ${dt.idt} AS idt
+    ) AS source
+    ON target.[idUsuario] = source.idt
+    WHEN MATCHED THEN
+        UPDATE SET
+            [Estado] = ${dt.est || 'null'},
+            [Nombre] = ${dt.nom || 'null'},
+            [Apellido1] = ${dt.ap1 || 'null'},
+            [Apellido2] = ${dt.ap2 || 'null'},
+    WHEN NOT MATCHED THEN
+        INSERT ([Estado], [Nombre], [Apellido1], [Apellido2], [DNI],
+            [idTarjeta], [Pin], [Inicio Ausencia], [Fin Ausencia], [Visitante], [Denegado],
+            [APB], [Eliminar], [idContrata], [idSubContrata], [idActividad], [Huella],
+            [FechaBaja], [ExcepcionBio], [TirarBrazo], [ActDesactAlarma], [Telefono], [eMail]
+        ) VALUES (
+            ${dt.est || 'null'},
+            ${dt.nom || 'null'},
+            ${dt.ap1 || 'null'},
+            ${dt.ap2 || 'null'},
+            ${dt.dni || 'null'},
+            ${dt.tarj || 'null'},
+            ${dt.pin || 'null'},
+            ${dt.ia || 'null'},
+            ${dt.fa || 'null'},
+            ${dt.vis || 'null'},
+            ${dt.den || 'null'},
+            ${dt.apb || 'null'},
+            null,
+            ${dt.con || 'null'},
+            ${dt.subcon || 'null'},
+            ${dt.act || 'null'},
+            ${dt.hue || 'null'},
+            ${dt.fb || 'null'},
+            ${dt.exbio || 'null'},
+            ${dt.tb || 'null'},
+            ${dt.aad || 'null'},
+            ${dt.tel || 'null'},
+            ${dt.email || 'null'}
+        );`;
+
+
+    alert("Se han insertado los datos")
+  } catch(e){
+    alert("Error: " + e)
+  }
 
 
 }
